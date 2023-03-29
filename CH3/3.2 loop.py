@@ -64,9 +64,38 @@ for i in "1234":
 
 # pass , break , continue
 '''
+
+用於if,loop,function,class
 pass: 跳過
 
 用於 for loop
-break: 中止這個迭代過程
-continue: 中止這次迭代
+break: 中止當前迭代過程
+continue: 跳過第t次迭代
 '''
+
+# break
+for i in "123456789":
+    if i =="5":
+        break
+    else:
+        print(i)
+
+# break in nested loop
+for i in "1234":
+    # if ... break
+    for j in "abcdefghi":
+        if  j =="e":
+            break
+        else:
+            print(i,j)
+
+
+
+# continue
+for i in "123456789":
+    if i =="5":
+        continue
+        #在continue下方的code都不會被執行
+    else:
+        print(i)
+ 
