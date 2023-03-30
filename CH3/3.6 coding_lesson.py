@@ -1,9 +1,10 @@
 ''' 
 該腳本功能:
 在終端機執行coding_lesson.py <偵測的文檔>
+return該文件的: 行數,字數,字母數 
 '''
 from sys import argv
-# argv 會返回 [執行檔案名稱.py 被偵測的文檔名稱.py]
+# argv 會 返回 終端機 所輸入的內容
 print(f"{argv}")
 print(f"資料長度{len(argv)}")
 print("<---------------------------------->")

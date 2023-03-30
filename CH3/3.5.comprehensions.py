@@ -40,3 +40,8 @@ new_set2 = {item**2 for item in set }
 print(new_set2)
 
 # generator comprehension
+# 效果有點類似Range()
+gernerate = (item**2 for item in list)
+print(gernerate)
+for i in gernerate:
+    print(i)
